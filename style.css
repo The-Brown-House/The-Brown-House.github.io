@@ -1310,3 +1310,58 @@ input:-webkit-autofill:focus {
 .form-double .box.last {
     float: right;
 }
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	padding: 20px;
+	justify-content: space-evenly;
+}
+.grid-item {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+.members {
+    margin-top: 20px;
+}
+.photoMembers {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+}
+.team {
+    margin-top: 6em;
+}
+@media screen and (max-width: 991px) {
+    .team {
+        margin-top: 0;
+    }
+    .photoMembers{
+        width: auto;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .photoMembers{
+        width: auto;
+        height: 120px;
+    }
+}
+@media  screen and (max-width: 650px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		padding: 20px;
+		justify-content: space-evenly;
+	}
+	.grid-item {
+		padding: 20px 5px;
+		font-size: 30px;
+		text-align: center;
+	  }
+    .photoMembers {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+   }
+}
